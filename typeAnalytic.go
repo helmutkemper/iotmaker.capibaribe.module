@@ -23,8 +23,8 @@ type Analytics struct {
 	timeOnStarEvent time.Time
 }
 
-// bt_br: Esta função deve ser chamada antes do início da execução
-// en: This function must be called prior to the start of the run
+// bt_br: Esta função deve ser chamada antes do início do servidor correspondente a rota do proxy reverso
+// en: This function must be called prior to the start of the server for correspondent route in the reverse proxy
 func (el *Analytics) OnExecutionStart() {
 	el.onExecutionStartCurrentExecutionsConterIncrementOne()
 	el.startTimeCounter()
